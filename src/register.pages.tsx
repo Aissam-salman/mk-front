@@ -11,7 +11,7 @@ const RegisterPages = () => {
 
         try {
             const response = await axios.post(
-                import.meta.env.VITE_ENDPOINT_SERVE +
+                import.meta.env.VITE_ENDPOINT_SERVER +
                 '/api/v1/auth/google/register', {
                 idToken: idToken,
             });
