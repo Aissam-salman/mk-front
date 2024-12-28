@@ -10,7 +10,9 @@ const RegisterPages = () => {
         const idToken = credentialResponse.credential;
 
         try {
-            const response = await axios.post('http://localhost:8080/api/v1/auth/google/register', {
+            const response = await axios.post(
+                import.meta.env.VITE_ENDPOINT_SERVE +
+                '/api/v1/auth/google/register', {
                 idToken: idToken,
             });
 
