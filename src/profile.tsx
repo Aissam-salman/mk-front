@@ -18,7 +18,7 @@ const Profile = () => {
         try {
             const token = localStorage.getItem('jwt');
 
-            const response = await axios.get("http://mk-backend-production.up.railway.app/profile", {
+            const response = await axios.get("https://mkapp.com/api/v1/users/profile", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

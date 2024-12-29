@@ -11,7 +11,7 @@ const RegisterPages = () => {
 
         try {
             const response = await axios.post(
-                'http://mk-backend-production.up.railway.app/api/v1/auth/google/register', {
+                'https://mkapp.com/api/v1/auth/google/register', {
                 idToken: idToken,
             });
 
