@@ -18,7 +18,7 @@ const Profile = () => {
         try {
             const token = localStorage.getItem('jwt');
 
-            const response = await axios.get(import.meta.env.VITE_ENDPOINT_SERVER + "/profile", {
+            const response = await axios.get("http://mk-backend-production.up.railway.app/profile", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
